@@ -27,10 +27,10 @@ const itemsRoutes = require("./routes/items.routes");
 app.use("/api/items/", itemsRoutes);
 
 const DietaryRoutes = require("./routes/dietary.routes");
-app.use("/api/items/dietary", DietaryRoutes);
+app.use("/api/dietary", DietaryRoutes);
 
 const OrdersRoutes = require("./routes/orders.routes");
-app.use("api/items/orders", OrdersRoutes);
+app.use("api/orders", OrdersRoutes);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);

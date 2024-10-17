@@ -68,7 +68,7 @@ function App() {
             }
           />
           <Route
-            path="/items:itemId"
+            path="/items/:itemId"
             element={
               <IsAdmin>
                 <ItemPage />

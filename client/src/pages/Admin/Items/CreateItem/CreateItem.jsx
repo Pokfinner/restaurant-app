@@ -21,7 +21,7 @@ function CreateItem() {
   useEffect(() => {
     // Fetch dietary information options from the database
     axios
-      .get(`${url}/items/dietary`)
+      .get(`${url}/dietary`)
       .then((response) => {
         setDietaryOptions(response.data);
       })
